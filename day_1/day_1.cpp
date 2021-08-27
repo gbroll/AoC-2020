@@ -49,7 +49,7 @@ int main(){
     std::cout << "This is the main program" << std::endl;
 
     std::string filename = "day_1_input.txt";
-    std::vector<int> input = read_input_text(filename);
+    std::vector<int> input = read_input_text_as_int(filename);
 
     //std::cout << input[0] << "\n" << input[1] << std::endl;
 
