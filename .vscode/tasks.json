@@ -9,7 +9,8 @@
                 "${file}",
                 "${workspaceFolder}/utils/AOC_UTILS_FILEREADER.cpp",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-std=c++17" 
             ],
             "options": {
                 "cwd": "${fileDirname}"

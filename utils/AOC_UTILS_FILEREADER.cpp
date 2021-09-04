@@ -36,8 +36,7 @@ std::vector<int> read_input_text_as_int(const std::string filename){
 
 }
 
-
-std::vector<std::string> read_input_text(const std::string filename){
+std::vector<std::string> read_input_text(const std::string filename, const bool skip_empty_lines){
 
     std::cout << "Reading " << filename << std::endl;
 
@@ -52,7 +51,9 @@ std::vector<std::string> read_input_text(const std::string filename){
 
             std::getline(file,stringIn);
             //std::cout << stringIn << std::endl;
-            if (!stringIn.empty()){
+            if (stringIn.empty() && skip_empty_lines == true){
+                   //do nothing
+                } else {
                     result.push_back(stringIn);
                 }
         }
