@@ -145,6 +145,7 @@ int main (){
 
     //Part 2
     //add regex rules for checking intervals etc;
+    //tr
     std::vector<std::string> rules = {
         "(?:19[2-9][0-9]|200[0-2])",                                //byr
         "(?:201[0-9]|2020)",                                        //iyr
